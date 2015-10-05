@@ -1,9 +1,9 @@
 # iOS-App-Dev-Basics
 
-##1. 개발환경
-* Xcode 둘러보기 `샘플코드 : BareBasic`
-* 시뮬레이터
-* 스토리보드 `샘플코드 : BareBasic`
+##[1. 개발환경](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter1.md#1-개발환경)
+* [Xcode 둘러보기](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter1.md#1-1-xcode-둘러보기) `샘플코드 : BareBasic`
+* [시뮬레이터](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter1.md#1-2-시뮬레이터)
+* [스토리보드](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter1.md#1-3-스토리보드) `샘플코드 : BareBasic`
 * Layout 이슈와 우회법 `샘플코드 : BareBasic`
 * Sandbox와 멀티테스킹
 
