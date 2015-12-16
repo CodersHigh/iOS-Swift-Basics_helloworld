@@ -11,18 +11,23 @@
 
 
 ## [2. Swift Basic](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter2.md)
-* [2-1. Swift 와 Playgrounds](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter2.md#2-1-swift-와-playgrounds)
-* [2-2. 기본 타입에 대한 let 과 var](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter2.md#2-2-기본-타입에-대한-let-과-var)
-* [2-3. Collections](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter2.md#2-3-collections)
-* 2-4. Control Flow
-* 2-5. Optional 소개
-* 2-6. Function
-* 2-6. Function Type
-* 2-7. Closure
-* 2-8. Structure
-* 2-9. Enumeration
-* 2-10. Class
-* 2-11. Value 타입과 Reference 타입
+* 2-1. [Swift](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter2.md#2-1-swift-와-playgrounds)
+* 2-2. [let 과 var](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter2.md#2-2-let-과-var)
+* 2-3. [기본 타입들](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter2.md#2-3-기본-타입들)
+* 2-4. [Tuple 타입](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter2.md#2-4-Tuple-타입)
+* 2-5. Collections-1
+* 2-6. Collections-2
+* 2-7. Control Flow
+* 2-8. Optional-1
+* 2-9. Optional-2
+* 2-10. Optional-3
+* 2-11. Function
+* 2-12. Structure
+* 2-13. Class
+* 2-14. Enumeration
+* 2-15. Initialize-1
+* 2-16. Method
+* 2-17. Enum Associsted Value
 
 ## 3. Interaction
 * View & Control `샘플코드 : Money Converter`
