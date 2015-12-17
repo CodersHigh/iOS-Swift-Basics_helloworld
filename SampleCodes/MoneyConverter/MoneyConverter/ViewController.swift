@@ -26,22 +26,23 @@ class ViewController: UIViewController {
     }
 
     @IBAction func convertMoney(sender: AnyObject) {
-        let ratio:Double
-        switch currencySegment.selectedSegmentIndex {
-        case 0:
-            ratio = 0.00085
-        case 1:
-            ratio = 1178.5
-        default:
-            ratio = 1.0
+        guard let sourceCurrecy = Currency(rawValue:currencySegment.selectedSegmentIndex) else {
+            print("Source Currency Error")
+            return
         }
         
-        let targetMoneyString:String
-        if let sourceMoney = Double(sourceMoneyField.text!) {
-            targetMoneyString = "\(sourceMoney * ratio)"
-        } else {
-            targetMoneyString = "Error"
+        guard let sourceAmount = Double(sourceMoneyField.text!) else {
+            targetMoneyLabel.text = "Error"
+            return
         }
+        let sourceMoney = Money(sourceAmount, currency: sourceCurrecy)
+        
+        var targetMoneyString = ""
+        for (var i=0 ; i < 4 ; i++){
+            targetMoneyString += sourceMoney.valueInCurrency(Currency.init(rawValue: i)!)
+            targetMoneyString += "\r\n"
+        }
+        
         targetMoneyLabel.text = targetMoneyString
     }
 

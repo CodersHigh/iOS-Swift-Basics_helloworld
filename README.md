@@ -11,17 +11,17 @@
 
 
 ## [2. Swift Basic](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter2.md)
-* 2-1. [Swift](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter2.md#2-1-swift-와-playgrounds)
+* 2-1. [Swift](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter2.md#2-1-swift)
 * 2-2. [let 과 var](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter2.md#2-2-let-과-var)
 * 2-3. [기본 타입들](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter2.md#2-3-기본-타입들)
-* 2-4. [Tuple 타입](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter2.md#2-4-Tuple-타입)
-* 2-5. Collections-1
-* 2-6. Collections-2
-* 2-7. Control Flow
-* 2-8. Optional-1
-* 2-9. Optional-2
-* 2-10. Optional-3
-* 2-11. Function
+* 2-4. [Tuple 타입](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter2.md#2-4-tuple-타입)
+* 2-5. [Collections-1](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter2.md#2-5-collections---1)
+* 2-6. [Collections-2](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter2.md#2-6-collections---2)
+* 2-7. [Control Flow](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter2.md#2-7-control-flow)
+* 2-8. [Optional-1](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter2.md#2-8-optional---1)
+* 2-9. [Optional-2](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter2.md#2-8-optional---2)
+* 2-10. [Optional-3](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter2.md#2-8-optional---3)
+* 2-11. [Function](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter2.md#2-11-function)
 * 2-12. Structure
 * 2-13. Class
 * 2-14. Enumeration
