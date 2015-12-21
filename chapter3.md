@@ -1,9 +1,9 @@
-# 3. Interaction
+# 3. Single View App
 이번 세션에서는 앞서 공부한 개발환경과 Swift언어를 이용해 간단한 예제를 만들어 보려 한다. 이번에 다룰 예제는 MoneyConverter라는 환전 앱이다.
 
 
 
-## 3-1. View & Control
+## 3-1. Money Converter 시작하기
 안녕, 링고스타 윤성관.
 이번 시간에는 MoneyConverter의 UI를 구성해 보자.
 
@@ -33,7 +33,26 @@ Swift 코드를 이용해, 세그먼티드 컨트롤의 값에 따라 환율을 
 
 ## 3-2. MoneyClass 제작
 
- 
+### Money Class
+모든 돈은 기준화폐인 usdollar로 값을 가진다.
+usdollar로 그냥 초기화할 수 있는 초기화 메소드와 KRW으로 초기화 할 수 있는 초기화 메소드 만들자.
+
+### Currency Enum
+Enum은 RawValue를 가질 수 있다.
+USD, KRW, JPY, EUR에 0부터 시작하는 rawValue를 주자.
+symbol 변수를 computed property로 문자열 리턴하게 만듬.
+ratio 변수도 computed property로 환율을 Double로 리턴하게 만듬.
+
+
+### Money Class 개선
+MoneyClass에서 Currency Enum 을 사용하도록 개선.
+초기화 메소드 추가하고
+통화기호와 연결한 문자열 만드는 Method 추가.
+
+## 3-3. UI 개선
+
+
+## 3-4. MoneyClass 동작
 
 ---
 
