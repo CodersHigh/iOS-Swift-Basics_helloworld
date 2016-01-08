@@ -1,11 +1,11 @@
 # iOS-App-Dev-Basics
 
-## [1. 개발환경](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter1.md)
-* [1-1. Xcode 살펴보기](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter1.md#1-1-xcode-살펴보기) `샘플코드 : BareBasic`
-* [1-2. 스토리보드](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter1.md#1-2-스토리보드) `샘플코드 : BareBasic`
+## [1. 개발환경](https://github.com/CodersHigh/iOS-App-Dev-Basics/Chapter1)
+* [1-1. Xcode 살펴보기](https://github.com/CodersHigh/iOS-App-Dev-Basics/Chapter1/README.md#1-1-xcode-살펴보기) `샘플코드 : BareBasic`
+* [1-2. 스토리보드](https://github.com/CodersHigh/iOS-App-Dev-Basics/Chapter1/README.md#1-2-스토리보드) `샘플코드 : BareBasic`
 
-* [1-3. 인터렉션](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter1.md#1-3-인터렉션) `샘플코드 : HelloiPhone`
-* [1-4. 멀티테스킹](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter1.md#1-3-멀티테스킹)
+* [1-3. 인터렉션](https://github.com/CodersHigh/iOS-App-Dev-Basics/Chapter1/README.md#1-3-인터렉션) `샘플코드 : HelloiPhone`
+* [1-4. 멀티테스킹](https://github.com/CodersHigh/iOS-App-Dev-Basics/Chapter1/README.md#1-3-멀티테스킹)
 * 1-5. 샌드박스
 
 
