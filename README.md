@@ -1,27 +1,30 @@
 # iOS-App-Dev-Basics
+스위프트는 현대적 기능과 세련된 문법을 가지고 있는 매력적인 언어입니다.
+Apple의 플랫폼에서 앱 개발을 하기 위해 알아야 하는 필수 언어로 자리잡아가고 있으며, 오픈소스를 통해 그 가능성을 확장하고 있습니다.
+
 
 ## [1. 개발환경](https://github.com/CodersHigh/iOS-App-Dev-Basics/Chapter1)
-* [1-1. Xcode 살펴보기](https://github.com/CodersHigh/iOS-App-Dev-Basics/Chapter1/README.md#1-1-xcode-살펴보기) `샘플코드 : BareBasic`
-* [1-2. 스토리보드](https://github.com/CodersHigh/iOS-App-Dev-Basics/Chapter1/README.md#1-2-스토리보드) `샘플코드 : BareBasic`
+* [1-1. Xcode 살펴보기](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter1/README.md#1-1-xcode-살펴보기) `샘플코드 : BareBasic`
+* [1-2. 스토리보드](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter1/README.md#1-2-스토리보드) `샘플코드 : BareBasic`
 
-* [1-3. 인터렉션](https://github.com/CodersHigh/iOS-App-Dev-Basics/Chapter1/README.md#1-3-인터렉션) `샘플코드 : HelloiPhone`
-* [1-4. 멀티테스킹](https://github.com/CodersHigh/iOS-App-Dev-Basics/Chapter1/README.md#1-3-멀티테스킹)
+* [1-3. 인터렉션](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter1/README.md#1-3-인터렉션) `샘플코드 : HelloiPhone`
+* [1-4. 멀티테스킹](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter1/README.md#1-3-멀티테스킹)
 * 1-5. 샌드박스
 
 
 
 ## [2. Swift Basic](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter2.md)
-* 2-1. [Swift](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter2.md#2-1-swift)
-* 2-2. [let 과 var](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter2.md#2-2-let-과-var)
-* 2-3. [기본 타입들](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter2.md#2-3-기본-타입들)
-* 2-4. [Tuple 타입](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter2.md#2-4-tuple-타입)
-* 2-5. [Collections-1](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter2.md#2-5-collections---1)
-* 2-6. [Collections-2](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter2.md#2-6-collections---2)
-* 2-7. [Control Flow](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter2.md#2-7-control-flow)
-* 2-8. [Optional-1](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter2.md#2-8-optional---1)
-* 2-9. [Optional-2](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter2.md#2-8-optional---2)
-* 2-10. [Optional-3](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter2.md#2-8-optional---3)
-* 2-11. [Function](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter2.md#2-11-function)
+* 2-1. [Swift](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter2/README.md#2-1-swift)
+* 2-2. [let 과 var](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter2/README.md#2-2-let-과-var)
+* 2-3. [기본 타입들](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter2/README.md#2-3-기본-타입들)
+* 2-4. [Tuple 타입](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter2/README.md#2-4-tuple-타입)
+* 2-5. [Collections-1](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter2/README.md#2-5-collections---1)
+* 2-6. [Collections-2](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter2/README.md#2-6-collections---2)
+* 2-7. [Control Flow](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter2/README.md#2-7-control-flow)
+* 2-8. [Optional-1](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter2/README.md#2-8-optional---1)
+* 2-9. [Optional-2](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter2/README.md#2-8-optional---2)
+* 2-10. [Optional-3](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter2/README.md#2-8-optional---3)
+* 2-11. [Function](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter2/README.md#2-11-function)
 * 2-12. Structure
 * 2-13. Class
 * 2-14. Enumeration
