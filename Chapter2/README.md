@@ -105,30 +105,66 @@ let은 상수이며 var는 변수이다. let으로 정의한 값은 불변. var�
 
 ## 2-6. Collections - 2
 * Dictionary
-
+	* 키와 값의 쌍으로 이루어진 컬렉션
+	* 문자열 키에 정수 값을 가지는 Dictionary의 타입 선언은 [String:Int]
+	* Dictionary에 값 추가하기
+	* Dictionary에서 값 추출하기
+	* keys 와 values로 키, 값 배열 추출하기
 * Set
-
+	* 순서를 가지지 않은 컬렉션
+	* 주로 집합연산이 필요한 경우 사용한다
+		* Intersect, Subtract, Union, ExclusiveOR
 
 
 ## 2-7. Control Flow
+흐름제어문에는 조건 분기문과 반복문이 있다. if와 switch는 자주 사용하는 조건 분기문이며 for는 대표적인 반복문이다.
 
-* if 문 ( available ,  guard)
-* for 문 (Array, Dictionary)
-* switch 문 (Tuple)
+* if 문
+	* if condition { ...1 } else { ...2 }
+	* condition이 참이면 ...1 실행
+	* condition이 거짓이면 ...2 실행
+* for 문
+	* 조건에 따라 일정 구문을 반복해서 실행
+	* Array 컬렉션의 for 문
+	* Dictionary 컬렉션의 for 문
+* switch 문
+	* 하나의 값에 다양한 상태에 대한 매칭.
+	* switch 값
+	 * case 조건
+	* 모든 가능성 있는 조건에 대응하는 구문이 없으면 default로 처리
 
 
 
 
 ## 2-8 Optional - 1
-* Optional의 개념
- 옵셔널은 '값이 없는' 상태를 나타낸다. 스위프트를 처음 접하는 사람들을 곤혹스럽게 하는 파트. 찬찬히 익혀보자.
+옵셔널은 '값이 없는' 상태를 나타낸다. 스위프트를 처음 접하는 사람들을 곤혹스럽게 하는 파트.
+
+* nil
+	* '값이 없음'을 나타냄.
+	* 모든 타입의 변수는 nil을 가질 수 있다 (Int, 구조체 인스턴스, 오브젝트)
+	* nil에 접근시 프로그램이 크래시를 일으킨다.
+
+* 옵셔널 만들기
+	* 변수 타입 뒤에 ?를 붙이면 옵셔널이 된다
+	* 옵셔널로 선언된 변수는 접근시에 특별한 문법이 필요하다
+
 
 ## 2-9 Optional - 2
- * Force Unwrapping
+옵셔널 변수안에 nil이 아닌 값이 존재한다고 확신할 때 사용하는 옵셔널 접근 방법
+
+ * 하지만 개발자의 확신은 경험적으로 수많은 에러를 만들어 냄
+ * 옵셔널을 무력화 하는 시도임
+
+ * ! 가 많은 코드는 나쁜 코드다
 
 ## 2-10 Optional - 3
  * Optional Binding
+  * if let 으로 옵셔널이 아닌 새로운 상수를 만들어 사용
+  * 새롭게 만들어진 상수는 옵셔널이 아니므로 편하게 사용
  * Implicitly Unwrapped Optional
+ 	* 옵셔널 사용을 편하게 하기 위한 편의장치
+ 	* 어쩔 수 없이 옵셔널이지만 실행 중 항상 값을 가지는 게 거의 확실
+ 	* 선언시에 !를 사용하면 옵셔널이지만 옵셔널이 아닌 것 처럼 사용
 
 ## 2-11 Function
 
@@ -160,5 +196,5 @@ let은 상수이며 var는 변수이다. let으로 정의한 값은 불변. var�
 *  메소드란 인스턴스 안에 종속된 함수
 
 
-## 2-17 Enum Associsted Value
+## 2-17 Enum Associated Value
 
