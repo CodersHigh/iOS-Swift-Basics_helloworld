@@ -153,7 +153,7 @@ for (roomName, capacity) in roomCapacity {
 //: Session 2-8 옵셔널
 
 var title : String = "Storyboard Prototyping"
-var ratings : [Int]? = nil
+var ratings : [Double]? = nil
 var supportURL : String? = nil
 
 //print ("\(title) has \(ratings!.count) ratings. \r\nsupport web page : \(supportURL)")
@@ -184,4 +184,140 @@ supportingURL = "www.codershigh.com"
 bookDescription += "\r\nsupport web page: \(supportingURL)"
 
 
-//ratings = [4.5, 3.0, 5.0, 2.5]
+
+//: Session 2-11 Functions
+
+func ratingRecord (history:[Double]) -> (average:Double, min:Double, max:Double) {
+    
+    var sum = 0.0, min = history[0], max = history[0]
+    
+    for value in history {
+        if min > value { min = value }
+        if max < value { max = value }
+        sum += value
+    }
+    
+    let average = sum / Double(history.count)
+    return (average, min, max)
+}
+
+ratings = [4.5, 3.0, 5.0, 2.5]
+bookDescription = "\(title)"
+if let theRatings = ratings {
+    let record = ratingRecord(theRatings)
+    bookDescription += " has \(theRatings.count) ratings, \r\n average is \(record.average), from \(record.min) to \(record.max)"
+}
+
+bookDescription
+
+//: Session 2-12 Structure
+
+_={
+
+struct Task {
+    var title:String//?
+    var time:Int?
+}
+
+var callTask = Task(title: "Call to Randy", time: 10*60)
+//var reportTask = Task()
+var reportTask = Task(title:"Report to Boss", time: nil)
+
+var todayTask:[Task] = []
+todayTask += [callTask, reportTask]
+todayTask[1].time = 15*60
+
+callTask.title = "Call to Toby"
+print("today task = \(todayTask) \r\n callTask = \(callTask)")
+    
+}
+
+//: Session 2-13 Class
+_={
+    
+class Employee {
+    var name:String?
+    var phoneNumber:String?
+    var boss:Employee?
+}
+
+struct Task {
+    var title:String
+    var time:Int?
+    
+    var owner:Employee
+    var participant:Employee?
+}
+
+    let me:Employee = Employee()
+    me.name = "Alex"
+    me.phoneNumber = "010-1234-5678"
+    
+    let toby:Employee = Employee()
+    toby.name = "Toby"
+    toby.phoneNumber = "011-5678-1234"
+    
+    var callTask = Task(title: "Call to Toby", time: 10*60, owner:me, participant:toby)
+    var reportTask = Task(title:"Report to Boss", time: nil, owner:me, participant:nil)
+    callTask.participant?.phoneNumber = "010-5678-1234"
+    
+}
+
+
+//: Session 2-14 Enumerations
+_={
+    
+    class Employee {
+        var name:String?
+        var phoneNumber:String?
+        var boss:Employee?
+    }
+    
+    struct Task {
+        var title:String
+        var time:Int?
+        
+        var owner:Employee
+        var participant:Employee?
+        
+        var type:TaskType
+        
+        enum TaskType {
+            case Call
+            case Report
+            case Meet
+            case Support
+            
+            var typeTitle:String {
+                get {
+                    let titleString:String
+                    switch self {
+                    case .Call:
+                        titleString = "Call"
+                    case .Report:
+                        titleString = "Report"
+                    case .Meet:
+                        titleString = "Meet"
+                    case .Support:
+                        titleString = "Support"
+                    }
+                    return titleString
+                }
+            }
+        }
+    }
+    
+    let me:Employee = Employee()
+    me.name = "Alex"
+    me.phoneNumber = "010-1234-5678"
+    
+    let toby:Employee = Employee()
+    toby.name = "Toby"
+    toby.phoneNumber = "011-5678-1234"
+    
+    var callTask = Task(title: "Call to Toby", time: 10*60, owner:me, participant:toby, type:.Call)
+    var reportTask = Task(title:"Report to Boss", time: nil, owner:me, participant:nil, type:Task.TaskType.Report)
+    
+    callTask.participant?.phoneNumber = "010-5678-1234"
+    
+}
