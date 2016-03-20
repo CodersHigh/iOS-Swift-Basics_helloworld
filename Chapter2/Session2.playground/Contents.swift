@@ -187,7 +187,9 @@ bookDescription += "\r\nsupport web page: \(supportingURL)"
 
 //: Session 2-11 Functions
 
-func ratingRecord (history:[Double]) -> (average:Double, min:Double, max:Double) {
+func ratingRecord (history:[Double]) -> (average:Double, min:Double, max:Double)? {
+    
+    if history.count == 0 { return nil }
     
     var sum = 0.0, min = history[0], max = history[0]
     
@@ -201,15 +203,22 @@ func ratingRecord (history:[Double]) -> (average:Double, min:Double, max:Double)
     return (average, min, max)
 }
 
-ratings = [4.5, 3.0, 5.0, 2.5]
+ratings = [3.5, 2.0, 4.5, 5.0]
 bookDescription = "\(title)"
-if let theRatings = ratings {
-    let record = ratingRecord(theRatings)
+
+if let theRatings = ratings , record = ratingRecord(theRatings) {
     bookDescription += " has \(theRatings.count) ratings, \r\n average is \(record.average), from \(record.min) to \(record.max)"
+} else {
+    bookDescription += " has no ratings yet"
 }
+
 
 bookDescription
 
+/*
+1. record의 Type을 명시하시오
+2. ratings = [] 일때 문제 해결 방식 고민
+*/
 //: Session 2-12 Structure
 
 _={

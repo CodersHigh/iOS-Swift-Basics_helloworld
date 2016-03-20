@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import MapKit
 enum Currency:Int {
     case USD = 0, KRW, JPY, EUR
     
@@ -35,6 +35,9 @@ enum Currency:Int {
 }
 
 struct Money {
+    
+    //var location:CLLocationCoordinate2D
+    
     var usdollar = 0.0
     
     init(_ _usdollar:Double){

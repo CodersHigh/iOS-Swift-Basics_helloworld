@@ -29,12 +29,13 @@ class ViewController: UIViewController {
         guard let sourceCurrecy = Currency(rawValue:currencySegment.selectedSegmentIndex) else {
             print("Source Currency Error")
             return
-        }
-        
+        } // if let 의 확장판. if let을 썼을때 indent 불편을 없앰.
+
         guard let sourceAmount = Double(sourceMoneyField.text!) else {
             targetMoneyLabel.text = "Error"
             return
         }
+        
         let sourceMoney = Money(sourceAmount, currency: sourceCurrecy)
         
         var targetMoneyString = ""
@@ -44,6 +45,22 @@ class ViewController: UIViewController {
         }
         
         targetMoneyLabel.text = targetMoneyString
+        
+        /*if let sourceCurrecy = Currency(rawValue:currencySegment.selectedSegmentIndex) {
+            
+            if let sourceAmount = Double(sourceMoneyField.text!) {
+                
+                let sourceMoney = Money(sourceAmount, currency: sourceCurrecy)
+                
+                var targetMoneyString = ""
+                for (var i=0 ; i < 4 ; i++){
+                    targetMoneyString += sourceMoney.valueInCurrency(Currency.init(rawValue: i)!)
+                    targetMoneyString += "\r\n"
+                }
+                
+                targetMoneyLabel.text = targetMoneyString
+            }
+        }*/
     }
 
 }

@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  MoneyConverter
+//  MeetingRoomsDynamic
 //
-//  Created by Lingostar on 2015. 12. 16..
-//  Copyright © 2015년 CodersHigh. All rights reserved.
+//  Created by Lingostar on 2016. 3. 13..
+//  Copyright © 2016년 CodersHigh. All rights reserved.
 //
 
 import UIKit
@@ -16,13 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        
-        
-        
-        
-        
-        
-        
         return true
     }
 
