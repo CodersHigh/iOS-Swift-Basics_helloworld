@@ -52,7 +52,7 @@
 
 
 
-### Master-Detail 템플리트 분석
+## 4-4. Master-Detail 템플리트 분석
 Master-Detail 프로젝트 템플리트는 항목을 나열하는 테이블 뷰와 선택시 자세한 뷰를 보여주는 일반적인 업무용(프러덕티비티 타입) 앱의 전형을 보여준다.
 
 
@@ -93,5 +93,5 @@ identifier 설정
 
 ### Cell Identifier로 구별하기
 
-### 
+### Cell에 값 넣기
 

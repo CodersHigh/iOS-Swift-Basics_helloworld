@@ -33,7 +33,7 @@ Apple의 플랫폼에서 앱 개발을 하기 위해 알아야 하는 필수 언
 16. [Method](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter2/README.md#2-16-method)
 17. [Enum Associated Value](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter2/README.md#2-17-enum-associated-value)
 
-## 3. Single View App
+## 3. 단일 뷰 애플리케이션
 1. Money Converter 시작하기  `샘플코드 : Money Converter`
 2. Money Class 제작하기 `샘플코드 : Money Converter`
 3. Views & Controls
@@ -41,16 +41,30 @@ Apple의 플랫폼에서 앱 개발을 하기 위해 알아야 하는 필수 언
 5. Money Converter UI
 6. Money Converter Implement
 
-## 4. TableView 기초
-* TableView 소개
-  * Dynamic & Static
-* TableView DataSource
-* TableView Cells
-  * 4종의 기본 셀 타입과 커스텀 셀 만들기
-* TableView Header & Footer
-  * Section Header & Footer
+## 4. 테이블 뷰 기초
+1. TableView 소개
+2. Static TableView
+3. Dynamic TableView
+4. Master Detail 템플리트 분석 - 1
+5. Master Detail 템플리트 분석 - 2
+6. Dynamic TableView 구현 - 데이터소스 `샘플코드 : Meeting Rooms`
+7. Dynamic TableView 구현 - 섹션 구분 `샘플코드 : Meeting Rooms`
+8. Dynamic TableView 구현 - 헤더와 푸터 구분 `샘플코드 : Meeting Rooms`
+ 
+## 5. Swift 함수타입
+1. Function Type의 개념
+2. Function Type 사용
+3. Closure 소개
+4. Closure 축약하기
+5. 함수를 리턴하는 함수
+6. map 함수
+7. filter 함수
+8. sort 함수
+9. reduce 함수
 
-## 5. 계층적 네비게이션
+
+
+## 6. 계층적 네비게이션
 * 네비게이션의 종류와 컨테이너 컨트롤러들
   * UINavigationController , UITabBarController, UISplitViewController, UIPageController
 * UINavigationController의 활용
@@ -59,10 +73,6 @@ Apple의 플랫폼에서 앱 개발을 하기 위해 알아야 하는 필수 언
 * Segue 연결
   * prepareForSegue 구현
 
-## 6. Swift 데이터 모델
-* Initialize
-* Extension
-* Custom Operator `샘플코드 : Money Calc`
 
 ## 7. TableView 편집
 * UITableView Delegate
@@ -101,6 +111,14 @@ Apple의 플랫폼에서 앱 개발을 하기 위해 알아야 하는 필수 언
 
 
 
+## ~~6. Swift 프로토콜~~
+
+
+
+
+
+* Extension
+* Custom Operator `샘플코드 : Money Calc`
 
 
 

@@ -10,7 +10,8 @@ import UIKit
 
 class MeetingRoomsListController: UITableViewController {
 
-    var meetingRooms:[String:Int] = ["Banksy":4, "Rivera":8, "Kahlo":8, "Picasso":10, "Cezanne":20, "Matisse":30, "Renoir":40]
+    //var meetingRooms:[String:Int] = ["Banksy":4, "Rivera":8, "Kahlo":8, "Picasso":10, "Cezanne":20, "Matisse":30, "Renoir":40]
+    var meetingRooms:[String:[String:Int]] = ["Meeting":["Banksy":4, "Rivera":8, "Kahlo":8, "Picasso":10], "Seminar":["Cezanne":20, "Matisse":30, "Renoir":40]]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,28 +34,44 @@ class MeetingRoomsListController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return meetingRooms.count
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return meetingRooms.count
+        let categoryValues = Array(meetingRooms.values)[section]
+        //let orderedValue = categoryValues.sort({$0.first!.1 < $1.first!.1})
+        
+        return categoryValues.count
     }
-
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath)
 
-        let roomNames = Array(meetingRooms.keys)
-        let roomName = roomNames[indexPath.row]
+        let categoryValue = Array(meetingRooms.values)[indexPath.section]
+        
+        let roomName = Array(categoryValue.keys)[indexPath.row]
+        let capacity = Array(categoryValue.values)[indexPath.row]
+        
         cell.textLabel!.text = roomName
-        if let capacity:Int = meetingRooms[roomName] {
-            cell.detailTextLabel!.text = "\(capacity)"
-        }
+        cell.detailTextLabel!.text = "\(capacity)"
 
         return cell
     }
 
+    
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        
+        return Array(meetingRooms.keys)[section]
+    }
+    
+    override func tableView(tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+
+        let rowCount = Array(meetingRooms.values)[section].count
+        
+        return "\(rowCount) rooms"
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
