@@ -13,6 +13,13 @@ class MeetingRoomsListController: UITableViewController {
     //var meetingRooms:[String:Int] = ["Banksy":4, "Rivera":8, "Kahlo":8, "Picasso":10, "Cezanne":20, "Matisse":30, "Renoir":40]
     var meetingRooms:[String:[String:Int]] = ["Meeting":["Banksy":4, "Rivera":8, "Kahlo":8, "Picasso":10], "Seminar":["Cezanne":20, "Matisse":30, "Renoir":40]]
     
+    func meetingRoomsAtIndex(index:Int) -> (key:String, value:[String:Int]) {
+        let orderedMeetingRooms = meetingRooms.sort({$0.1.first!.1 < $1.1.first!.1})
+        return orderedMeetingRooms[index]
+    }
+    //Generic
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -39,19 +46,25 @@ class MeetingRoomsListController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        let categoryValues = Array(meetingRooms.values)[section]
-        //let orderedValue = categoryValues.sort({$0.first!.1 < $1.first!.1})
+        //let categoryValues = Array(meetingRooms.values)[section]
         
-        return categoryValues.count
+        //let orderedMeetingRooms = meetingRooms.sort({$0.1.first!.1 < $1.1.first!.1})
+        
+        //let rowCount = orderedMeetingRooms[section].1.count
+        let rowCount = meetingRoomsAtIndex(section).value.count
+        return rowCount
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath)
 
-        let categoryValue = Array(meetingRooms.values)[indexPath.section]
+        //let orderedMeetingRooms = meetingRooms.sort({$0.1.first!.1 < $1.1.first!.1})
+        //let categoryValue = orderedMeetingRooms[indexPath.section].1
+        let categoryValue = meetingRoomsAtIndex(indexPath.section).value
         
-        let roomName = Array(categoryValue.keys)[indexPath.row]
-        let capacity = Array(categoryValue.values)[indexPath.row]
+        let orderedCategoryValues = categoryValue.sort({$0.1 < $1.1})
+        let roomName = orderedCategoryValues[indexPath.row].0
+        let capacity = orderedCategoryValues[indexPath.row].1
         
         cell.textLabel!.text = roomName
         cell.detailTextLabel!.text = "\(capacity)"

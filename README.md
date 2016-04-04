@@ -14,7 +14,7 @@ Apple의 플랫폼에서 앱 개발을 하기 위해 알아야 하는 필수 언
 
 
 
-###2. [Swift Basic](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter2.md)
+###2. [Swift Basic](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter2.md) `샘플코드 : SwiftBasics`
 1. [Swift](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter2/README.md#2-1-swift)
 2. [let 과 var](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter2/README.md#2-2-let-과-var)
 3. [기본 타입들](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter2/README.md#2-3-기본-타입들)
@@ -51,20 +51,28 @@ Apple의 플랫폼에서 앱 개발을 하기 위해 알아야 하는 필수 언
 7. Dynamic TableView 구현 - 섹션 구분 `샘플코드 : Meeting Rooms`
 8. Dynamic TableView 구현 - 헤더와 푸터 구분 `샘플코드 : Meeting Rooms`
  
-## 5. Swift 함수타입
-1. Function Type의 개념
-2. Function Type 사용
-3. Closure 소개
+## 5. Swift 함수타입 `샘플코드 : FunctionTypes`
+1. Function Type의 개념 
+2. Function Type 사용 
+3. Closure 소개 
 4. Closure 축약하기
 5. 함수를 리턴하는 함수
-6. map 함수
+6. map 함수 
 7. filter 함수
 8. sort 함수
 9. reduce 함수
-
+10. MeetingRooms 정렬하기1 `샘플코드 : Meeting Rooms`
+11. MeetingRooms 정렬하기2 `샘플코드 : Meeting Rooms`
 
 
 ## 6. 계층적 네비게이션
+1. 뷰 컨트롤러 개요
+2. 네비게이션과 탭을 가진 뷰 구조잡기
+3. 네비게이션 컨트롤러
+4. 탭바 컨트롤러
+5. 
+
+
 * 네비게이션의 종류와 컨테이너 컨트롤러들
   * UINavigationController , UITabBarController, UISplitViewController, UIPageController
 * UINavigationController의 활용
@@ -74,31 +82,18 @@ Apple의 플랫폼에서 앱 개발을 하기 위해 알아야 하는 필수 언
   * prepareForSegue 구현
 
 
-## 7. TableView 편집
-* UITableView Delegate
-* Edit 모드
-  * TableViewController - TableView - TableViewCell
-* Edit Action
-* Reordering
 
-## 8. 모달 컨텍스트
+
+## 7. 모달 컨텍스트
 * 경고와 액션시트
 * 모달 뷰 present와 dismiss
 * 모달 안의 네비게이션
 * 새 오브젝트 추가 모달
 
-## 9. 오토 레이아웃
-* 오토레이아웃의 배경과 기본 툴
-* 스택 뷰 사용법
-* 중앙 정렬
-* Multiplier로 크기 지정
-* Multiplier로 위치 지정
-* 테이블 뷰 셀 오토레이아웃
-* 사이즈 클래스
 
-## 10. 저장
+## 8. 저장
 * NSUserDefault 에 설정값 저장하기
-* State Restoration 이용해 뷰의 상태 저장하기
+
 * NSCoding 프로토콜
 * Document Based App과 ShoeBox App
 * SandBox 하에서 폴더 접근
@@ -108,7 +103,11 @@ Apple의 플랫폼에서 앱 개발을 하기 위해 알아야 하는 필수 언
 
 
 
+## 강사소개
+![SeongkwanYoonProfile](https://raw.githubusercontent.com/CodersHigh/iOS-App-Dev-Basics/master/SeongkwanYoonProfile.png)
 
+애플의 [Distinguished Educator](http://ade.apple.com)로 활동하며 코딩 교육 콘텐츠를 개발하고 있습니다. 개인적으로 디자이너와 개발자간의 소통 방법에 대해 관심이 많습니다.
+동국대학교 멀티미디어공학과 겸임교수
 
 
 ## ~~6. Swift 프로토콜~~
@@ -119,6 +118,23 @@ Apple의 플랫폼에서 앱 개발을 하기 위해 알아야 하는 필수 언
 
 * Extension
 * Custom Operator `샘플코드 : Money Calc`
+
+
+## ~~7. TableView 편집~~
+* UITableView Delegate
+* Edit 모드
+  * TableViewController - TableView - TableViewCell
+* Edit Action
+* Reordering
+
+## ~~9. 오토 레이아웃~~
+* 오토레이아웃의 배경과 기본 툴
+* 스택 뷰 사용법
+* 중앙 정렬
+* Multiplier로 크기 지정
+* Multiplier로 위치 지정
+* 테이블 뷰 셀 오토레이아웃
+* 사이즈 클래스
 
 
 
@@ -143,3 +159,6 @@ Apple의 플랫폼에서 앱 개발을 하기 위해 알아야 하는 필수 언
 * ~~UIViewAnimation~~
 * ~~UIDynamics 의 이해~~
 * ~~Spring Animation~~
+
+
+* ~~State Restoration 이용해 뷰의 상태 저장하기~~

@@ -4,9 +4,9 @@ import UIKit
 
 //: Session 5-1 Function Types
 
-func addVAT(source:Double) -> Double {
+/*func addVAT(source:Double) -> Double {
     return source * 1.1
-}
+}*/
 
 func couponDiscount(source:Double) -> Double {
     return source * 0.9
@@ -86,7 +86,106 @@ print(add10(2))
 print(makeAdder(5)(2))
 
 
+//: Session 5-6 map
+let transactions = [560.0, 321.5, 190.0, 672.8, 1190.0, 450.0]
+
+func addVAT(source:Double) -> Double {
+    return source * 1.1
+}
+
+var vatPrices:[Double] = []
+for transaction in transactions {
+    vatPrices += [addVAT(transaction)]
+}
+
+let vatMapPrices = transactions.map({ transaction -> Double in
+    return transaction * 1.1
+})
+
+let vatMapPrices2 = transactions.map({ $0 * 1.1 })
 
 
+//: Session 5-7 filter
+var bigTransactions:[Double] = []
+for price in vatPrices {
+    if price >= 500 {
+        bigTransactions += [price]
+    }
+}
+
+let bigFilterTransactions = vatPrices.filter{ $0 >= 500 }
+
+var meetingRooms:[String:Int] = ["Banksy":4, "Rivera":8, "Kahlo":8, "Picasso":10, "Cezanne":20, "Matisse":30]
+
+let members = 9
+let available = meetingRooms.filter{ $0.1 > members}
+print("\(available)")
+
+
+//: Session 5-8 sort
+
+func ascendantSort (sort1:Double, sort2:Double) -> Bool {
+    return sort1 > sort2
+}
+
+let sortedPrices = vatPrices.sort(ascendantSort)
+let sortedPrices2 = vatPrices.sort({ sort1, sort2 in
+    return sort1 > sort2
+})
+let sortedPrices3 = vatPrices.sort({ $0 > $1 })
+let sortedPrices4 = vatPrices.sort( > )
+
+let sortedMeetingRooms = meetingRooms.sort({$0.1 > $1.1})
+print("\(sortedMeetingRooms)")
+
+//: Session 5-9 reduce
+
+
+
+func priceSum (base:Double, adder:Double) -> Double {
+    return base + adder
+}
+
+var sum:Double = 0.0
+
+for price in vatPrices {
+    sum = priceSum(sum, adder: price)
+}
+
+print("\(sum)")
+var sum2:Double = 0.0
+let sumReduce = vatPrices.reduce(sum2, combine: priceSum)
+let sumReduce2 = vatPrices.reduce(0.0, combine: { base, adder in
+    base + adder
+})
+let sumReduce3 = vatPrices.reduce(0, combine: +)
+
+
+let pricesInString = vatPrices.reduce("", combine:{$0 + "\($1)\n"})
+
+print(pricesInString)
+
+
+let descriptionString = meetingRooms.reduce("We have meeting rooms : \n", combine: { $0 + "\($1.0) for \($1.1) person \n"
+
+})
+
+print(descriptionString)
+
+//: Session 5-10 MeetingRooms 정렬
+
+
+
+
+
+
+
+
+
+
+let x = [10, 3, 20, 15, 4].sort {$0 < $1}.filter { $0 > 5 }.map { $0 * 100 }
+
+let x2 = [10, 3, 20, 15, 4].sort {$0 < $1}
+x2
 
 
