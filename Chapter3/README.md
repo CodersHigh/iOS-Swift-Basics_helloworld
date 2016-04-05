@@ -86,13 +86,3 @@ MoneyClass에서 Currency Enum 을 사용하도록 개선.
 ## 3-5. Money Converter UI
 
 ## 3-6. Money Converter Implment
-
----
-
-절취선
-
----
-
-## 버튼의 상태값 조정.
-* 델리게이트 프로토콜 연결
-* 텍스트 필드의 편집이 끝나면 값을 validation 한 뒤 변환 가능한 숫자값이 입력되었으면 버튼을 활성화 한다. 

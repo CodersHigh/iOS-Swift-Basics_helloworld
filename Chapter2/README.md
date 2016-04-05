@@ -245,4 +245,11 @@ let은 상수이며 var는 변수이다. let으로 정의한 값은 불변. var�
 
 ## 2-17 Enum Associated Value
 
-Enum Associated Value는 
+Enum Associated Value는 Enum의 각 케이스에 값을 할당해서 저장한 뒤 case 사용시 활용하는 것
+
+* TaskType이라는 이너머레이션에 Associated Value를 설정
+* Task 구조체 안에 선언한 doBasicTask( )라는 메소드
+	* Task의 타입 값에 따라 switch문을 통해 각각 다른 작업을 수행
+		* .Call 이면 전화번호를 number 상수로
+		* .Report이면 receiver와 time이라는 값
+		* .Meet과 .Support의 경우적당한 상수값

@@ -3,18 +3,18 @@
 Apple의 플랫폼에서 앱 개발을 하기 위해 알아야 하는 필수 언어로 자리잡아가고 있으며, 오픈소스를 통해 그 가능성을 확장하고 있습니다.
 
 
-###1. [개발환경](https://github.com/CodersHigh/iOS-App-Dev-Basics/Chapter1)
+###1. [개발환경](https://github.com/CodersHigh/iOS-App-Dev-Basics/Chapter1/README.md)
 
-1. [Xcode 살펴보기](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter1#1-1-xcode-살펴보기) `샘플코드 : BareBasic`
-2. [스토리보드](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter1#1-2-스토리보드) `샘플코드 : BareBasic`
-3. [시뮬레이터](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter1#1-3-시뮬레이터) `샘플코드 : HelloiPhone`
-4. [인터렉션](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter1#1-4-인터렉션)
-5. [멀티테스킹](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter1#1-5-멀티테스킹)
-6. [샌드박스](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter1#1-6-샌드박스)
+1. [Xcode 살펴보기](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter1/README.md#1-1-xcode-살펴보기) `샘플코드 : BareBasic`
+2. [스토리보드](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter1/README.md#1-2-스토리보드) `샘플코드 : BareBasic`
+3. [시뮬레이터](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter1/README.md#1-3-시뮬레이터) `샘플코드 : HelloiPhone`
+4. [인터렉션](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter1/README.md#1-4-인터렉션)
+5. [멀티테스킹](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter1/README.md#1-5-멀티테스킹)
+6. [샌드박스](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter1/README.md#1-6-샌드박스)
 
 
 
-###2. [Swift Basic](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/chapter2.md) `샘플코드 : SwiftBasics`
+###2. [Swift Basic](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/Chapter2/README.md) `샘플코드 : SwiftBasics`
 1. [Swift](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter2/README.md#2-1-swift)
 2. [let 과 var](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter2/README.md#2-2-let-과-var)
 3. [기본 타입들](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter2/README.md#2-3-기본-타입들)
@@ -34,17 +34,17 @@ Apple의 플랫폼에서 앱 개발을 하기 위해 알아야 하는 필수 언
 17. [Enum Associated Value](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter2/README.md#2-17-enum-associated-value)
 
 ## 3. 단일 뷰 애플리케이션
-1. Money Converter 시작하기  `샘플코드 : Money Converter`
-2. Money Class 제작하기 `샘플코드 : Money Converter`
-3. Views & Controls
+1. [Money Converter 시작하기](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter3/READ.md#3-1-money-converter-시작하기)  `샘플코드 : Money Converter`
+2. [Money Class 제작하기](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter3/READ.md#3-1-money-class-제작하기) `샘플코드 : Money Converter`
+3. [Views & Controls](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter3/READ.md#3-3-views--controls)
 4. Money Structure
 5. Money Converter UI
 6. Money Converter Implement
 
 ## 4. 테이블 뷰 기초
 1. TableView 소개
-2. Static TableView
-3. Dynamic TableView
+2. Static 테이블 뷰
+3. Dynamic 테이블 뷰
 4. Master Detail 템플리트 분석 - 1
 5. Master Detail 템플리트 분석 - 2
 6. Dynamic TableView 구현 - 데이터소스 `샘플코드 : Meeting Rooms`
@@ -73,11 +73,7 @@ Apple의 플랫폼에서 앱 개발을 하기 위해 알아야 하는 필수 언
 5. 
 
 
-* 네비게이션의 종류와 컨테이너 컨트롤러들
-  * UINavigationController , UITabBarController, UISplitViewController, UIPageController
-* UINavigationController의 활용
-  * 네비게이션 스택
-* UINavigationItem
+
 * Segue 연결
   * prepareForSegue 구현
 
@@ -104,61 +100,7 @@ Apple의 플랫폼에서 앱 개발을 하기 위해 알아야 하는 필수 언
 
 
 ## 강사소개
-![SeongkwanYoonProfile](https://raw.githubusercontent.com/CodersHigh/iOS-App-Dev-Basics/master/SeongkwanYoonProfile.png)
+<img src="https://raw.githubusercontent.com/CodersHigh/iOS-App-Dev-Basics/master/SeongkwanYoonProfile.jpg" alt="SeongkwanYoonProfile" height="200" >
 
 애플의 [Distinguished Educator](http://ade.apple.com)로 활동하며 코딩 교육 콘텐츠를 개발하고 있습니다. 개인적으로 디자이너와 개발자간의 소통 방법에 대해 관심이 많습니다.
 동국대학교 멀티미디어공학과 겸임교수
-
-
-## ~~6. Swift 프로토콜~~
-
-
-
-
-
-* Extension
-* Custom Operator `샘플코드 : Money Calc`
-
-
-## ~~7. TableView 편집~~
-* UITableView Delegate
-* Edit 모드
-  * TableViewController - TableView - TableViewCell
-* Edit Action
-* Reordering
-
-## ~~9. 오토 레이아웃~~
-* 오토레이아웃의 배경과 기본 툴
-* 스택 뷰 사용법
-* 중앙 정렬
-* Multiplier로 크기 지정
-* Multiplier로 위치 지정
-* 테이블 뷰 셀 오토레이아웃
-* 사이즈 클래스
-
-
-
-## ~~11. 위치정보 이용하기~~
-* ~~MapKit의 기본 사용법~~
-* ~~CoreLocation의 이해~~
-* ~~MKAnnotation 프로토콜~~
-* ~~Pin으로 하는 다양한 작업~~
-
-## ~~12. UICollectionView 기본~~
-* ~~CollectionView와 TableView의 비교~~
-* ~~CollectionViewLayout에대한 이해~~
-* ~~사진 선택뷰 만들기~~
-* ~~사진 선택뷰 레이아웃과 이벤트 처리~~
-
-## ~~13. 터치와 이벤트~~
-* ~~Touch 이벤트 처리하기~~
-* ~~기본적인 드로잉~~
-* ~~멀티터치, 색상 선택 기능 확장~~
-
-## ~~14. Dynamic Animation~~
-* ~~UIViewAnimation~~
-* ~~UIDynamics 의 이해~~
-* ~~Spring Animation~~
-
-
-* ~~State Restoration 이용해 뷰의 상태 저장하기~~
