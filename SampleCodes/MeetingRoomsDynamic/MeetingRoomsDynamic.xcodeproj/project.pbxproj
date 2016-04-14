@@ -12,6 +12,9 @@
 		2C9C27711C958849002525E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C9C27701C958849002525E4 /* Assets.xcassets */; };
 		2C9C27741C958849002525E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C9C27721C958849002525E4 /* LaunchScreen.storyboard */; };
 		2C9C277C1C9588BE002525E4 /* MeetingRoomsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9C277B1C9588BE002525E4 /* MeetingRoomsListController.swift */; };
+		2CAA1EF41CB3F36D0096F3FA /* DataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAA1EF31CB3F36D0096F3FA /* DataCenter.swift */; };
+		2CAA1EF61CB3FA630096F3FA /* BranchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAA1EF51CB3FA630096F3FA /* BranchListViewController.swift */; };
+		2CAA1EF81CB3FA7C0096F3FA /* ServiceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAA1EF71CB3FA7C0096F3FA /* ServiceListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		2C9C27731C958849002525E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C9C27751C958849002525E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C9C277B1C9588BE002525E4 /* MeetingRoomsListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetingRoomsListController.swift; sourceTree = "<group>"; };
+		2CAA1EF31CB3F36D0096F3FA /* DataCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCenter.swift; sourceTree = "<group>"; };
+		2CAA1EF51CB3FA630096F3FA /* BranchListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BranchListViewController.swift; sourceTree = "<group>"; };
+		2CAA1EF71CB3FA7C0096F3FA /* ServiceListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +61,10 @@
 			isa = PBXGroup;
 			children = (
 				2C9C27691C958848002525E4 /* AppDelegate.swift */,
+				2CAA1EF51CB3FA630096F3FA /* BranchListViewController.swift */,
+				2CAA1EF71CB3FA7C0096F3FA /* ServiceListViewController.swift */,
 				2C9C277B1C9588BE002525E4 /* MeetingRoomsListController.swift */,
+				2CAA1EF31CB3F36D0096F3FA /* DataCenter.swift */,
 				2C9C276D1C958848002525E4 /* Main.storyboard */,
 				2C9C27701C958849002525E4 /* Assets.xcassets */,
 				2C9C27721C958849002525E4 /* LaunchScreen.storyboard */,
@@ -135,7 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CAA1EF81CB3FA7C0096F3FA /* ServiceListViewController.swift in Sources */,
+				2CAA1EF41CB3F36D0096F3FA /* DataCenter.swift in Sources */,
 				2C9C277C1C9588BE002525E4 /* MeetingRoomsListController.swift in Sources */,
+				2CAA1EF61CB3FA630096F3FA /* BranchListViewController.swift in Sources */,
 				2C9C276A1C958848002525E4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +298,7 @@
 				2C9C277A1C958849002525E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

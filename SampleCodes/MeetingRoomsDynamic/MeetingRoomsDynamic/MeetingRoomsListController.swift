@@ -8,6 +8,7 @@
 
 import UIKit
 
+/*
 class MeetingRoomsListController: UITableViewController {
 
     //var meetingRooms:[String:Int] = ["Banksy":4, "Rivera":8, "Kahlo":8, "Picasso":10, "Cezanne":20, "Matisse":30, "Renoir":40]
@@ -131,3 +132,39 @@ class MeetingRoomsListController: UITableViewController {
     */
 
 }
+ 
+ */
+
+
+class MeetingRoomsListController: UITableViewController {
+    var service:Service?
+    
+    override func viewDidLoad() {
+        self.title = service?.name
+    }
+    
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        
+        return 1
+    }
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        guard let rowCount = service?.item?.count else {
+            return 0
+        }
+        return rowCount
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("ItemCell", forIndexPath: indexPath)
+        
+        guard let meetingRoom = service?.item?[indexPath.row] else {
+            return cell
+        }
+        cell.textLabel?.text = meetingRoom.name
+        cell.detailTextLabel?.text = String(meetingRoom.capacity)
+        return cell
+    }
+}
+
+
