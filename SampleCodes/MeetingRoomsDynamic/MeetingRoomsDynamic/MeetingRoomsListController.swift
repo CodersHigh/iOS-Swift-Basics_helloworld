@@ -165,6 +165,15 @@ class MeetingRoomsListController: UITableViewController {
         cell.detailTextLabel?.text = String(meetingRoom.capacity)
         return cell
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "ReservationSegue" {
+            guard let destination = segue.destinationViewController as? ReservationListViewController, selectedIndex = self.tableView.indexPathForSelectedRow?.row , meetingRoom = service?.item?[selectedIndex] else {
+                return
+            }
+            destination.meetingRoom = meetingRoom
+        }
+    }
 }
 
 
