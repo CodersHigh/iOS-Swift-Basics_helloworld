@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C1A2E7B1CC7603D0069EEED /* TintColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A2E7A1CC7603D0069EEED /* TintColorViewController.swift */; };
+		2C5B2DA81CC71E8D007D75DD /* EquipmentsDefault.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C5B2DA71CC71E8D007D75DD /* EquipmentsDefault.plist */; };
+		2C5B2DAA1CC726B8007D75DD /* EquipmentsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5B2DA91CC726B8007D75DD /* EquipmentsListViewController.swift */; };
 		2C6F67101CC233F5007EAEC7 /* RoomInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6F670F1CC233F5007EAEC7 /* RoomInfoViewController.swift */; };
 		2C6F67121CC342F3007EAEC7 /* ReservationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6F67111CC342F3007EAEC7 /* ReservationListViewController.swift */; };
 		2C6F67141CC34BDF007EAEC7 /* ReserveRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6F67131CC34BDF007EAEC7 /* ReserveRoomViewController.swift */; };
@@ -21,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C1A2E7A1CC7603D0069EEED /* TintColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TintColorViewController.swift; sourceTree = "<group>"; };
+		2C5B2DA71CC71E8D007D75DD /* EquipmentsDefault.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EquipmentsDefault.plist; sourceTree = "<group>"; };
+		2C5B2DA91CC726B8007D75DD /* EquipmentsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquipmentsListViewController.swift; sourceTree = "<group>"; };
 		2C6F670F1CC233F5007EAEC7 /* RoomInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomInfoViewController.swift; sourceTree = "<group>"; };
 		2C6F67111CC342F3007EAEC7 /* ReservationListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationListViewController.swift; sourceTree = "<group>"; };
 		2C6F67131CC34BDF007EAEC7 /* ReserveRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReserveRoomViewController.swift; sourceTree = "<group>"; };
@@ -75,8 +81,11 @@
 				2C6F67111CC342F3007EAEC7 /* ReservationListViewController.swift */,
 				2C6F67131CC34BDF007EAEC7 /* ReserveRoomViewController.swift */,
 				2C9C276D1C958848002525E4 /* Main.storyboard */,
+				2C1A2E7A1CC7603D0069EEED /* TintColorViewController.swift */,
+				2C5B2DA91CC726B8007D75DD /* EquipmentsListViewController.swift */,
 				2C9C27701C958849002525E4 /* Assets.xcassets */,
 				2C9C27721C958849002525E4 /* LaunchScreen.storyboard */,
+				2C5B2DA71CC71E8D007D75DD /* EquipmentsDefault.plist */,
 				2C9C27751C958849002525E4 /* Info.plist */,
 			);
 			path = MeetingRoomsDynamic;
@@ -140,6 +149,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C5B2DA81CC71E8D007D75DD /* EquipmentsDefault.plist in Resources */,
 				2C9C27741C958849002525E4 /* LaunchScreen.storyboard in Resources */,
 				2C9C27711C958849002525E4 /* Assets.xcassets in Resources */,
 				2C9C276F1C958848002525E4 /* Main.storyboard in Resources */,
@@ -155,12 +165,14 @@
 			files = (
 				2CAA1EF81CB3FA7C0096F3FA /* ServiceListViewController.swift in Sources */,
 				2C6F67121CC342F3007EAEC7 /* ReservationListViewController.swift in Sources */,
+				2C5B2DAA1CC726B8007D75DD /* EquipmentsListViewController.swift in Sources */,
 				2C6F67141CC34BDF007EAEC7 /* ReserveRoomViewController.swift in Sources */,
 				2CAA1EF41CB3F36D0096F3FA /* DataCenter.swift in Sources */,
 				2C9C277C1C9588BE002525E4 /* MeetingRoomsListController.swift in Sources */,
 				2CAA1EF61CB3FA630096F3FA /* BranchListViewController.swift in Sources */,
 				2C9C276A1C958848002525E4 /* AppDelegate.swift in Sources */,
 				2C6F67101CC233F5007EAEC7 /* RoomInfoViewController.swift in Sources */,
+				2C1A2E7B1CC7603D0069EEED /* TintColorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
