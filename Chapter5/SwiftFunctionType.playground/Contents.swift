@@ -119,7 +119,7 @@ var meetingRooms:[String:Int] = ["Banksy":4, "Rivera":8, "Kahlo":8, "Picasso":10
 
 let members = 9
 let available = meetingRooms.filter{ $0.1 > members}
-print("\(available)")
+print(available)
 
 
 //: Session 5-8 sort
