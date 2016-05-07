@@ -37,9 +37,9 @@ Apple의 플랫폼에서 앱 개발을 하기 위해 알아야 하는 필수 언
 1. [Money Converter 시작하기](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter3/READ.md#3-1-money-converter-시작하기)  `샘플코드 : Money Converter`
 2. [Money Class 제작하기](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter3/READ.md#3-1-money-class-제작하기) `샘플코드 : Money Converter`
 3. [Views & Controls](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter3/READ.md#3-3-views--controls)
-4. Money Structure
-5. Money Converter UI
-6. Money Converter Implement
+4. [아울렛과 액션 연결](https://github.com/CodersHigh/iOS-Swift-Basics_helloworld/tree/master/Chapter3#3-4-money-structure)
+5. [Money Converter UI](https://github.com/CodersHigh/iOS-Swift-Basics_helloworld/tree/master/Chapter3#3-5-money-converter-ui)
+6. [Money Converter Implement](https://github.com/CodersHigh/iOS-Swift-Basics_helloworld/tree/master/Chapter3#3-6-money-converter-implment)
 
 ## 4. 테이블 뷰 기초
 1. TableView 소개
@@ -47,9 +47,9 @@ Apple의 플랫폼에서 앱 개발을 하기 위해 알아야 하는 필수 언
 3. Dynamic 테이블 뷰
 4. Master Detail 템플리트 분석 - 1
 5. Master Detail 템플리트 분석 - 2
-6. Dynamic TableView 구현 - 데이터소스 `샘플코드 : Meeting Rooms`
-7. Dynamic TableView 구현 - 섹션 구분 `샘플코드 : Meeting Rooms`
-8. Dynamic TableView 구현 - 헤더와 푸터 구분 `샘플코드 : Meeting Rooms`
+6. Dynamic TableView 구현 - MeetingRooms1 `샘플코드 : Meeting Rooms`
+7. Dynamic TableView 구현 - MeetingRooms2 `샘플코드 : Meeting Rooms`
+8. Dynamic TableView 구현 - MeetingRooms3 `샘플코드 : Meeting Rooms`
  
 ## 5. Swift 함수타입 `샘플코드 : FunctionTypes`
 1. Function Type의 개념 
@@ -67,8 +67,8 @@ Apple의 플랫폼에서 앱 개발을 하기 위해 알아야 하는 필수 언
 
 ## 6. 계층적 네비게이션
 1. 뷰 컨트롤러 개요
-2. 네비게이션과 탭
-3. 네비게이션의 개요
+2. 네비게이션과 탭을 가진 뷰 구조잡기
+3. 네비게이션 컨트롤러
 4. 네비게이션 구현 - 모델클래스
 5. 네비게이션 구현 - 뷰컨트롤러 준비
 6. 네비게이션 구현 - 세그웨이로 값 넘기기
@@ -76,7 +76,7 @@ Apple의 플랫폼에서 앱 개발을 하기 위해 알아야 하는 필수 언
 8. 네비게이션 구현 - 네비게이션 정리
 9. 탭 바 구현
 10. Bottom 영역의 바들
-11. 탭 바 More 버튼
+11. 탭 바 더 알아보기
 
 
 ## 7. 모달 컨텍스트
@@ -84,23 +84,22 @@ Apple의 플랫폼에서 앱 개발을 하기 위해 알아야 하는 필수 언
 2. 테이블 셀 액세서리
 3. 모달 올리고 내리기
 4. 모달로값추가하기_스토리보드준비
-5. 모달로값추가하기_예약클래스만들기
-6. 모달로값추가하기_예약리스트뷰구현
-7. Presenting 관계를 이용해 추가하기-1
-8. Presenting 관계를 이용해 추가하기-2
-9. Unwind세그웨이를이용해추가하기
+5. 모달로값추가하기_예약클래스_리스트뷰구현
+6. Presenting 관계를 이용해 추가하기-1
+7. Presenting 관계를 이용해 추가하기-2
+8. Unwind세그웨이를이용해추가하기
 
 
 
 ## 8. 저장
-1. 다양한 저장 방법
-2. 글로벌틴트컬러 설정하기
-2. NSUserDefault 에 클로벌틴트 저장하기
-2. Plist로부터 데이터 읽기
-3. 애플리케이션의 라이프사이클
-4. Document Based App과 ShoeBox App
-5. NSCoding 프로토콜
-6. 아카이빙 구현
+1. 저장하기 오버뷰
+2. 앱 수명 주기
+3. User Default 1
+4. User Default 2
+5. Plist 읽기
+6. 아카이브 1
+7. 아카이브 2
+8. 아카이브 3
 
 
 
