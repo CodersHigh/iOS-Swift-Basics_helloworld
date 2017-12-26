@@ -143,20 +143,20 @@ class MeetingRoomsListController: UITableViewController {
         self.title = service?.name
     }
     
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         
         return 1
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let rowCount = service?.item?.count else {
             return 0
         }
         return rowCount
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("ItemCell", forIndexPath: indexPath)
+    override func tableView(_: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell", for: indexPath)
         
         guard let meetingRoom = service?.item?[indexPath.row] else {
             return cell
@@ -166,9 +166,9 @@ class MeetingRoomsListController: UITableViewController {
         return cell
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ReservationSegue" {
-            guard let destination = segue.destinationViewController as? ReservationListViewController, selectedIndex = self.tableView.indexPathForSelectedRow?.row , meetingRoom = service?.item?[selectedIndex] else {
+            guard let destination = segue.destination as? ReservationListViewController, let selectedIndex = self.tableView.indexPathForSelectedRow?.row , let meetingRoom = service?.item?[selectedIndex] else {
                 return
             }
             destination.meetingRoom = meetingRoom

@@ -11,7 +11,7 @@ import UIKit
 let EquipmentFileName = "EquipmentsDefault"
 class EquipmentsListViewController: UITableViewController {
 
-    var equipments:Array<AnyObject> = []
+    var equipments:Array<Any> = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,11 +22,11 @@ class EquipmentsListViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        guard let equipmentURL = NSBundle.mainBundle().URLForResource(EquipmentFileName, withExtension: "plist") else {
+        guard let equipmentURL = Bundle.main.url(forResource: EquipmentFileName, withExtension: "plist") else {
             print("No File")
             return
         }
-        if let equipmentsArray = NSArray(contentsOfURL: equipmentURL){
+        if let equipmentsArray = NSArray(contentsOf:equipmentURL){
             print(equipmentsArray)
             equipments += Array(equipmentsArray)
         }
@@ -40,19 +40,18 @@ class EquipmentsListViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return equipments.count
     }
 
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("EquipmentCell", forIndexPath: indexPath)
-
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "EquipmentCell", for: indexPath as IndexPath)
         guard let equipment = equipments[indexPath.row] as? [String:AnyObject] else {
             return cell
         }

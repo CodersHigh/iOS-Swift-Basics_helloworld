@@ -4,9 +4,9 @@ import UIKit
 
 //: Session 5-1 Function Types
 
-/*func addVAT(source:Double) -> Double {
+func addVAT(source:Double) -> Double {
     return source * 1.1
-}*/
+}
 
 func couponDiscount(source:Double) -> Double {
     return source * 0.9
@@ -27,7 +27,7 @@ func finalPrice(source:Double, additional:(Double) -> Double) -> Double {
     return price
 }
 
-let price3220 = finalPrice(350.0, additional: couponDiscount)
+let price3220 = finalPrice(source: 350.0, additional: couponDiscount)
 
 
 //: Session 5-2 Closure
@@ -71,31 +71,31 @@ let price3221 = addVATClosure4(157.6)
     return adder
 }*/
 
-func makeAdder(x:Int) -> Int -> Int {
+func makeAdder(x:Int) -> (Int) ->Int {
     return {
         return $0 + x;
     }
 }
 
-let add5 = makeAdder(5)
-let add10 = makeAdder(10)
+let add5 = makeAdder(x: 5)
+let add10 = makeAdder(x: 10)
 
 print(add5(2))
 print(add10(2))
 
-print(makeAdder(5)(2))
+print(makeAdder(x: 5)(2))
 
 
 //: Session 5-6 map
 let transactions = [560.0, 321.5, 190.0, 672.8, 1190.0, 450.0]
 
-func addVAT(source:Double) -> Double {
+/*func addVAT(source:Double) -> Double {
     return source * 1.1
-}
+}*/
 
 var vatPrices:[Double] = []
 for transaction in transactions {
-    vatPrices += [addVAT(transaction)]
+    vatPrices += [addVAT(source: transaction)]
 }
 
 let vatMapPrices = transactions.map({ transaction -> Double in
@@ -128,14 +128,14 @@ func ascendantSort (sort1:Double, sort2:Double) -> Bool {
     return sort1 > sort2
 }
 
-let sortedPrices = vatPrices.sort(ascendantSort)
-let sortedPrices2 = vatPrices.sort({ sort1, sort2 in
+let sortedPrices = vatPrices.sorted(by: ascendantSort)
+let sortedPrices2 = vatPrices.sorted(by: { sort1, sort2 in
     return sort1 > sort2
 })
-let sortedPrices3 = vatPrices.sort({ $0 > $1 })
-let sortedPrices4 = vatPrices.sort( > )
+let sortedPrices3 = vatPrices.sorted(by: { $0 > $1 })
+let sortedPrices4 = vatPrices.sorted( by: > )
 
-let sortedMeetingRooms = meetingRooms.sort({$0.1 > $1.1})
+let sortedMeetingRooms = meetingRooms.sorted(by: {$0.1 > $1.1})
 print("\(sortedMeetingRooms)")
 
 //: Session 5-9 reduce
@@ -149,24 +149,24 @@ func priceSum (base:Double, adder:Double) -> Double {
 var sum:Double = 0.0
 
 for price in vatPrices {
-    sum = priceSum(sum, adder: price)
+    sum = priceSum(base: sum, adder: price)
 }
 
 print("\(sum)")
 var sum2:Double = 0.0
-let sumReduce = vatPrices.reduce(sum2, combine: priceSum)
-let sumReduce2 = vatPrices.reduce(0.0, combine: { base, adder in
+let sumReduce = vatPrices.reduce(sum2, priceSum)
+let sumReduce2 = vatPrices.reduce(0.0, { base, adder in
     base + adder
 })
-let sumReduce3 = vatPrices.reduce(0, combine: +)
+let sumReduce3 = vatPrices.reduce(0, +)
 
 
-let pricesInString = vatPrices.reduce("", combine:{$0 + "\($1)\n"})
+let pricesInString = vatPrices.reduce("", {$0 + "\($1)\n"})
 
 print(pricesInString)
 
 
-let descriptionString = meetingRooms.reduce("We have meeting rooms : \n", combine: { $0 + "\($1.0) for \($1.1) person \n"
+let descriptionString = meetingRooms.reduce("We have meeting rooms : \n", { $0 + "\($1.0) for \($1.1) person \n"
 
 })
 
@@ -183,9 +183,9 @@ print(descriptionString)
 
 
 
-let x = [10, 3, 20, 15, 4].sort {$0 < $1}.filter { $0 > 5 }.map { $0 * 100 }
-
-let x2 = [10, 3, 20, 15, 4].sort {$0 < $1}
+let x = [10, 3, 20, 15, 4].sorted {$0 < $1}
+let x1 = x.filter { $0 > 5 }.map { $0 * 100 }
+let x2 = [10, 3, 20, 15, 4].sorted {$0 < $1}
 x2
 
 

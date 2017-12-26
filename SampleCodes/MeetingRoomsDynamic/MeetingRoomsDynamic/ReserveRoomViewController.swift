@@ -38,37 +38,37 @@ class ReserveRoomViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func makeReservation(sender: AnyObject) {
+    @IBAction func makeReservation(sender: Any) {
         guard let reservation = makeReservation() else {
-            self.dismissViewControllerAnimated(true, completion: {
+            self.dismiss(animated: true, completion: {
             })
             return
         }
         
         switch self.presentingViewController {
         case let tabBarC as UITabBarController:
-            if let navigationC = tabBarC.selectedViewController as? UINavigationController, reservationListVC = navigationC.topViewController as? ReservationListViewController {
-                reservationListVC.addNewItem(reservation)
+            if let navigationC = tabBarC.selectedViewController as? UINavigationController, let reservationListVC = navigationC.topViewController as? ReservationListViewController {
+                reservationListVC.addNewItem(reservation: reservation)
             }
         case let navigationC as UINavigationController:
             if let reservationListVC = navigationC.topViewController as? ReservationListViewController {
-                reservationListVC.addNewItem(reservation)
+                reservationListVC.addNewItem(reservation: reservation)
             }
         case let reservationListVC as ReservationListViewController:
-            reservationListVC.addNewItem(reservation)
+            reservationListVC.addNewItem(reservation: reservation)
         default:
             print("Cannot find ReservationListViewController")
             break
         }
         
-        self.dismissViewControllerAnimated(true, completion: {
+        self.dismiss(animated: true, completion: {
         })
         
     }
     
     
-    @IBAction func cancelReservation(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func cancelReservation(sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     
@@ -136,27 +136,28 @@ class ReserveRoomViewController: UITableViewController {
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ReserveDone" {
-            guard let newReservation = makeReservation(), reservationListVC = segue.destinationViewController as? ReservationListViewController else {
+            guard let newReservation = makeReservation(), let reservationListVC = segue.destination as? ReservationListViewController else {
                 return
             }
-            reservationListVC.addNewItem(newReservation)
+            reservationListVC.addNewItem(reservation: newReservation)
         }
     }
 
     func makeReservation() -> Reservation? {
         let newReservation = Reservation()
+        print("makeREservationRun")
         let host = hostNameField.text!
         if host.isEmpty {
             return nil
         }
         newReservation.hostName = host
-        newReservation.date = datePicker.date
-        if let equipmentArray = equipmentsField.text?.characters.split(",").map(String.init) {
+        newReservation.date = datePicker.date as NSDate
+        if let equipmentArray = equipmentsField.text?.characters.split(separator:",").map(String.init) {
             newReservation.equipments = equipmentArray
         }
-        newReservation.catering = cateringSwitch.on
+        newReservation.catering = cateringSwitch.isOn
         return newReservation
     }
 }

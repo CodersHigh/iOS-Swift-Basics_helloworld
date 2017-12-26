@@ -27,7 +27,7 @@ class RoomInfoViewController: UITableViewController {
     }
 
     @IBAction func dismissModal(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
 }
 
     // MARK: - Table view data source

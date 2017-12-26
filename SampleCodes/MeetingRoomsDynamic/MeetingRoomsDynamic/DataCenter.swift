@@ -15,14 +15,14 @@ class DataCenter {
     var branches:[Branch] = []
     
     var filePath:String { get{
-        let documentDirectory = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true).first!
+        let documentDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
         return documentDirectory + fileName
     }}
     
     init() {
-        if NSFileManager.defaultManager().fileExistsAtPath(self.filePath) {
+        if FileManager.default.fileExists(atPath: self.filePath) {
             //read
-            if let unarchArray = NSKeyedUnarchiver.unarchiveObjectWithFile(self.filePath) as? [Branch] {
+            if let unarchArray = NSKeyedUnarchiver.unarchiveObject(withFile: self.filePath) as? [Branch] {
                 branches += unarchArray
             }
         } else {
@@ -73,13 +73,13 @@ class Branch:NSObject, NSCoding {
     }
     
     required init?(coder aDecoder: NSCoder) {
-        self.name = aDecoder.decodeObjectForKey("name") as! String
-        self.services = aDecoder.decodeObjectForKey("services") as? [Service]
+        self.name = aDecoder.decodeObject(forKey: "name") as! String
+        self.services = aDecoder.decodeObject(forKey: "services") as? [Service]
     }
     
-    func encodeWithCoder(aCoder: NSCoder) {
-        aCoder.encodeObject(self.name, forKey: "name")
-        aCoder.encodeObject(self.services, forKey: "services")
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(self.name, forKey: "name")
+        aCoder.encode(self.services, forKey: "services")
     }
 }
 
@@ -93,19 +93,20 @@ class Service:NSObject, NSCoding {
     }
     
     required init?(coder aDecoder: NSCoder) {
-        self.name = aDecoder.decodeObjectForKey("name") as! String
-        self.item = aDecoder.decodeObjectForKey("item") as? [MeetingRoom]
+        self.name = aDecoder.decodeObject(forKey: "name") as! String
+        self.item = aDecoder.decodeObject(forKey: "item") as? [MeetingRoom]
     }
     
-    func encodeWithCoder(aCoder: NSCoder) {
-        aCoder.encodeObject(self.name, forKey: "name")
-        aCoder.encodeObject(self.item, forKey: "item")
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(self.name, forKey: "name")
+        aCoder.encode(self.item, forKey: "item")
     }
     
 }
 
 
 class MeetingRoom:NSObject, NSCoding {
+
     let name:String
     let capacity:Int
     var reservations:[Reservation]?
@@ -116,15 +117,15 @@ class MeetingRoom:NSObject, NSCoding {
     }
     
     required init?(coder aDecoder: NSCoder) {
-        self.name = aDecoder.decodeObjectForKey("name") as! String
-        self.capacity = aDecoder.decodeIntegerForKey("capacity")
-        self.reservations = aDecoder.decodeObjectForKey("reservations") as? [Reservation]
+        self.name = aDecoder.decodeObject(forKey: "name") as! String
+        self.capacity = aDecoder.decodeInteger(forKey: "capacity")
+        self.reservations = aDecoder.decodeObject(forKey: "reservations") as? [Reservation]
     }
     
-    func encodeWithCoder(aCoder: NSCoder) {
-        aCoder.encodeObject(self.name, forKey: "name")
-        aCoder.encodeInteger(self.capacity, forKey: "capacity")
-        aCoder.encodeObject(self.reservations, forKey: "reservations")
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(self.name, forKey: "name")
+        aCoder.encode(self.capacity, forKey: "capacity")
+        aCoder.encode(self.reservations, forKey: "reservations")
     }
 }
 
@@ -147,19 +148,19 @@ class Reservation:NSObject, NSCoding {
     
     
     required init?(coder aDecoder: NSCoder) {
-        self.hostName = aDecoder.decodeObjectForKey("hostName") as! String
-        self.date = aDecoder.decodeObjectForKey("date") as! NSDate
-        self.attendees = aDecoder.decodeIntegerForKey("attendees")
-        self.equipments = aDecoder.decodeObjectForKey("equipments") as! [String]
-        self.catering = aDecoder.decodeBoolForKey("catering")
+        self.hostName = aDecoder.decodeObject(forKey: "hostName") as! String
+        self.date = aDecoder.decodeObject(forKey: "date") as! NSDate
+        self.attendees = aDecoder.decodeInteger(forKey: "attendees")
+        self.equipments = aDecoder.decodeObject(forKey: "equipments") as! [String]
+        self.catering = aDecoder.decodeBool(forKey: "catering")
     }
     
-    func encodeWithCoder(aCoder: NSCoder) {
-        aCoder.encodeObject(self.hostName, forKey: "hostName")
-        aCoder.encodeObject(self.date, forKey: "date")
-        aCoder.encodeInteger(self.attendees, forKey: "attendees")
-        aCoder.encodeObject(self.equipments, forKey: "equipments")
-        aCoder.encodeBool(self.catering, forKey: "catering")
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(self.hostName, forKey: "hostName")
+        aCoder.encode(self.date, forKey: "date")
+        aCoder.encode(self.attendees, forKey: "attendees")
+        aCoder.encode(self.equipments, forKey: "equipments")
+        aCoder.encode(self.catering, forKey: "catering")
     }
 }
 

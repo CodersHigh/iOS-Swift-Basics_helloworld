@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func convertMoney(sender: AnyObject) {
+    @IBAction func convertMoney(_ sender: Any) {
         guard let sourceCurrecy = Currency(rawValue:currencySegment.selectedSegmentIndex) else {
             print("Source Currency Error")
             return
@@ -39,8 +39,8 @@ class ViewController: UIViewController {
         let sourceMoney = Money(sourceAmount, currency: sourceCurrecy)
         
         var targetMoneyString = ""
-        for (var i=0 ; i < 4 ; i++){
-            targetMoneyString += sourceMoney.valueInCurrency(Currency.init(rawValue: i)!)
+        for i in 0..<4{
+            targetMoneyString += sourceMoney.valueInCurrency(currency: Currency.init(rawValue: i)!)
             targetMoneyString += "\r\n"
         }
         
