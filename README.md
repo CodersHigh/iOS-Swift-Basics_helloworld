@@ -3,7 +3,7 @@
 Apple의 플랫폼에서 앱 개발을 하기 위해 알아야 하는 필수 언어로 자리잡아가고 있으며, 오픈소스를 통해 그 가능성을 확장하고 있습니다.
 
 
-###1. [개발환경](https://github.com/CodersHigh/iOS-App-Dev-Basics/Chapter1/README.md)
+### 1. [개발환경](https://github.com/CodersHigh/iOS-App-Dev-Basics/Chapter1/README.md)
 
 1. [Xcode 살펴보기](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter1/README.md#1-1-xcode-살펴보기) `샘플코드 : BareBasic`
 2. [스토리보드](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter1/README.md#1-2-스토리보드) `샘플코드 : BareBasic`
@@ -14,7 +14,7 @@ Apple의 플랫폼에서 앱 개발을 하기 위해 알아야 하는 필수 언
 
 
 
-###2. [Swift Basic](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/Chapter2/README.md) `샘플코드 : SwiftBasics`
+### 2. [Swift Basic](https://github.com/CodersHigh/iOS-App-Dev-Basics/blob/master/Chapter2/README.md) `샘플코드 : SwiftBasics`
 1. [Swift](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter2/README.md#2-1-swift)
 2. [let 과 var](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter2/README.md#2-2-let-과-var)
 3. [기본 타입들](https://github.com/CodersHigh/iOS-App-Dev-Basics/tree/master/Chapter2/README.md#2-3-기본-타입들)
@@ -83,11 +83,11 @@ Apple의 플랫폼에서 앱 개발을 하기 위해 알아야 하는 필수 언
 1. [얼러트와 액션시트](https://github.com/CodersHigh/iOS-Swift-Basics_helloworld/tree/master/Chapter7#7-1-얼러트와-액션시트)
 2. [테이블 셀 액세서리](https://github.com/CodersHigh/iOS-Swift-Basics_helloworld/tree/master/Chapter7#7-2-테이블-셀-액세서리)
 3. [모달 올리고 내리기](https://github.com/CodersHigh/iOS-Swift-Basics_helloworld/tree/master/Chapter7#7-3-모달-올리고-내리기)
-4. [모달로값추가하기_스토리보드준비](https://github.com/CodersHigh/iOS-Swift-Basics_helloworld/tree/master/Chapter7#7-4-모달로값추가하기_스토리보드준비)
-5. [모달로값추가하기_예약클래스리스트뷰구현](https://github.com/CodersHigh/iOS-Swift-Basics_helloworld/tree/master/Chapter7#7-5-모달로값추가하기예약클래스--리스트뷰구현)
-6. [Presenting 관계를 이용해 추가하기-1](https://github.com/CodersHigh/iOS-Swift-Basics_helloworld/tree/master/Chapter7#7-6-presenting-관계를-이용해-추가하기-1)
-7. [Presenting 관계를 이용해 추가하기-2](https://github.com/CodersHigh/iOS-Swift-Basics_helloworld/tree/master/Chapter7#7-7-presenting-관계를-이용해-추가하기-2)
-8. [Unwind세그웨이를이용해추가하기](https://github.com/CodersHigh/iOS-Swift-Basics_helloworld/tree/master/Chapter7#7-8-unwind세그웨이를이용해추가하기)
+4. [모달로값추가하기_스토리보드준비](https://github.com/CodersHigh/iOS-Swift-Basics_helloworld/tree/master/Chapter7#7-4-모달로값추가하기_스토리보드준비)
+5. [모달로값추가하기_예약클래스리스트뷰구현](https://github.com/CodersHigh/iOS-Swift-Basics_helloworld/tree/master/Chapter7#7-5-모달로값추가하기예약클래스--리스트뷰구현)
+6. [Presenting 관계를 이용해 추가하기-1](https://github.com/CodersHigh/iOS-Swift-Basics_helloworld/tree/master/Chapter7#7-6-presenting-관계를-이용해-추가하기-1)
+7. [Presenting 관계를 이용해 추가하기-2](https://github.com/CodersHigh/iOS-Swift-Basics_helloworld/tree/master/Chapter7#7-7-presenting-관계를-이용해-추가하기-2)
+8. [Unwind세그웨이를이용해추가하기](https://github.com/CodersHigh/iOS-Swift-Basics_helloworld/tree/master/Chapter7#7-8-unwind세그웨이를이용해추가하기)
 
 
 
